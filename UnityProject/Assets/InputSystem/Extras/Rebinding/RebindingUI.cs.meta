@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b7d413865cbbf436a94478bc13bf9c21
+timeCreated: 1494001042
+licenseType: Pro
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - targetCanvas: {instanceID: 0}
+  - rebindingUIPrefab: {fileID: 1576730374211882, guid: 24c3bdc4a07c34bc3b673ded8f1bf2a9,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
