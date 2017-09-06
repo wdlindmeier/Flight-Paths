@@ -113,7 +113,7 @@ public class SplineReader : MonoBehaviour
         {
             numListed += 1;
 
-            var flightInfo = entry.Value; // .AsObject;
+            var flightInfo = entry.Value;
             Flight flight = null;
             bool hasFlight = m_cachedFlights.TryGetValue(entry.Key, out flight);
 
