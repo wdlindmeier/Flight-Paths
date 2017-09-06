@@ -1,12 +1,20 @@
-﻿Shader "Custom/CompositeSplines"
+﻿//-----------------------------------------------------------------------
+// <copyright file="CompositeSplines.shader" company="Google">
+//
+// Copyright 2017 Google Inc.
+// Use of this source code is governed by a MIT-style
+// license that can be found in the LICENSE file or at
+// https://opensource.org/licenses/MIT.
+//
+// </copyright>
+//-----------------------------------------------------------------------
+
+Shader "Custom/CompositeSplines"
 {
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
 		_RenderTexture ("Render Texture", 2D) = "black" {}
-		//_keyingColor ("KeyColour", Color) = (0,1,1,1)
-		//_thresh ("Threshold", Range (0, 16)) = 0.65
-		//_slope ("Slope", Range (0, 1)) = 0.63
 	}
 	SubShader
 	{
@@ -50,7 +58,7 @@
 				fixed4 colFX = tex2D(_MainTex, i.uv);			
 				fixed4 additive = min(input_color + (colFX * colFX.a), float4(1,1,1,1));
 				fixed4 multiply = lerp(input_color, colFX, colFX.a * 0.5);
-				return additive;//lerp(multiply, additive, 0.25);
+				return additive;
 			}
 			ENDCG
 		}

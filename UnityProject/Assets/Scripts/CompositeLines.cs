@@ -1,4 +1,15 @@
-﻿using UnityEngine;
+﻿//-----------------------------------------------------------------------
+// <copyright file="CompositeLines.cs" company="Google">
+//
+// Copyright 2017 Google Inc.
+// Use of this source code is governed by a MIT-style
+// license that can be found in the LICENSE file or at
+// https://opensource.org/licenses/MIT.
+//
+// </copyright>
+//-----------------------------------------------------------------------
+
+using UnityEngine;
 
 /// <summary>
 /// Composites the spline texture on top of the camera feed.
